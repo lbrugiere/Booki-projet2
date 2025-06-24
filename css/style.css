@@ -58,10 +58,132 @@ a {
     color: var(--main-bg-color)
 }
 
+/**** header ****/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 61.09px;
+    height: 19px;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 68px;
+}
+
+nav li :hover{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+
+nav a{
+    padding-top: 20px;
+}
+
+/**** section 1 titre, formulaire, filtres ****/
+.section-recherche{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    width: 377px;
+    height: 49px;
+}
+
+.fa-location-dot{
+    color: black;
+    background-color: #F2F2F2;
+    border-radius: 10px 0px 0px 10px;
+    border: none;
+    padding: 16px;
+}
+
+#lieu{
+    border: none;
+    border-bottom: #F2F2F2 solid 1px;
+    border-top: #F2F2F2 solid 1px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#lieu::placeholder {
+    color: black;
+}
+
+#rechercher{
+    color: white;
+    background-color: #0065FC;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    padding: 15px 16px;
+}
+
+
+.recherche-titre p{
+    margin: 0;
+    margin-top: 5px;
+}
+
+.titre-filtres{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.filtres{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.selec-filtre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 2px #d9d9d9 solid;
+    border-radius: 30px;
+    height: 40px;
+    padding: 4px 19px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.selec-filtre:hover{
+    background-color: #DEEBFF;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info p {
+    margin: 0;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
 }
 
 .hebergements-and-populaires section {
@@ -74,6 +196,53 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+}
+
+.hebergements-cards img {
+    width: 100%;
+    height: 124px;
+    border-radius: 16px 16px 0px 0px;
+    object-fit: cover;
+}
+
+.hebergements-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.hebergements-cards a {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+}
+
+.hebergements .card-content {
+    padding-left: 10px;
+}
+
+.hebergements .card-title {
+    margin: 0;
+    margin-top: 4px;
+}
+
+.hebergements .card-subtitle {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.hebergements .card-rating {
+    margin-bottom: 5px;
+}
+
+#afficher-plus {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
 }
 
 /****** Populaires ***********/
@@ -121,8 +290,73 @@ a {
     margin-bottom: 5px;
 }
 
+/**** Activités ****/
+.activites img {
+    width: 100%;
+    height: 380px;
+    border-radius: 16px 16px 0px 0px;
+    object-fit: cover;
+}
 
+.activites-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
 
+.activites-cards .card{
+    padding: 0;
+}
+
+.activites-cards .card-title {
+    padding-left: 15px;
+}
+
+.activites {
+    padding: 30px;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+.activites-cards a {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(25% - 15px);
+}
+.activites h2 {
+    margin-bottom: 30px;
+}
+/**** footer ****/
+footer ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer p{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+footer {
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.element-footer {
+    width: 30%;
+}
+
+footer li {
+    margin-bottom: 10px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
