@@ -104,12 +104,14 @@ nav p:hover {
 
 form {
     display: flex;
-    width: 380px;
-    height: 50px;
+    flex: 1;
 }
 
 .fa-location-dot {
     color: black;
+}
+
+.location-dot {
     background-color: var(--main-bg-color);
     border-radius: 15px 0px 0px 15px;
     border: none;
@@ -117,13 +119,20 @@ form {
 }
 
 form input {
-    border: none;
-    border-bottom: var(--main-bg-color) solid 1px;
-    border-top: var(--main-bg-color) solid 1px;
     font-size: 18px;
     font-weight: 700;
     text-align: center;
-    min-width: 0;
+}
+
+.recherche-lieu{
+    display: flex;
+    flex: 1;
+}
+.recherche-lieu input {
+    border: none;
+    border-bottom: var(--main-bg-color) solid 1px;
+    border-top: var(--main-bg-color) solid 1px;
+    outline-offset: -2px;
 }
 
 form input::placeholder {
@@ -492,6 +501,7 @@ footer li {
 
     .btn-form-mobile {
         display: block;
+        transform: translate(-15px);
     }
 
     .selec-filtre {
