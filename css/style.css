@@ -66,35 +66,41 @@ a {
     color: var(--main-bg-color)
 }
 
-/**** header ****/
-header {
+/**** nav ****/
+nav {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 100%;
+
 }
 
 .logo {
     height: 20px;
 }
 
-nav {
+.logo-nav {
     display: flex;
+    padding-top: 20px;
+}
+
+.liens-nav {
     list-style: none;
+    display: flex;
+    justify-content: space-between;
 }
 
-nav p{
-    margin: 0;
-    padding: 10px 0;
+nav a {
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
-
-nav p:hover {
+nav a:hover {
     color: var(--main-color);
     border-top: 2px solid var(--main-color);
 }
 
-/**** section 1 titre, formulaire, filtres ****/
-.section-recherche {
+/**** header ****/
+header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -105,6 +111,7 @@ nav p:hover {
 form {
     display: flex;
     flex: 1;
+    max-width: 380px;
 }
 
 .fa-location-dot {
@@ -122,12 +129,14 @@ form input {
     font-size: 18px;
     font-weight: 700;
     text-align: center;
+    padding: 0;
 }
 
 .recherche-lieu{
     display: flex;
     flex: 1;
 }
+
 .recherche-lieu input {
     border: none;
     border-bottom: var(--main-bg-color) solid 1px;
@@ -203,9 +212,9 @@ form input::placeholder {
     background-color: var(--filter-bg-color);
 }
 
-.fa-info {
-    height: 10px;
-    width: 4px;
+.logo-info {
+    display: flex;
+    justify-content: center;
     border-radius: 50%;
     border: var(--border-color) solid 1px;
     padding: 7px 10px;
@@ -251,7 +260,7 @@ form input::placeholder {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px;
+    gap: 25px;
     margin-bottom: 30px;
     margin-top: 30px;
 }
@@ -441,7 +450,11 @@ footer li {
     }
 
     .populaires-cards a {
-        width: 30%;
+        width: 32%;
+    }
+
+    .hebergements-cards a {
+        width: 31%;
     }
 /**** card content ****/
     .card-title {
@@ -468,33 +481,40 @@ footer li {
         padding: 0;
     }
 
-/**** header ****/
-    header {
+/**** nav ****/
+    nav {
         flex-direction: column;
+    }
+
+    .logo-nav {
+        padding: 0;
+        justify-content: center;
     }
 
     .logo {
         padding: 30px;
     }
 
-    nav {
-        width: 100%;
-        align-items: center;
+    .liens-nav {
+        flex: 1;
     }
 
-    nav p:hover {
+    nav a:hover {
         border-top: none;
         border-bottom: 2px solid var(--main-color);
     }
     
-    nav p {
+    nav a {
         width: 50%;
-        text-align: center;
         border-bottom: 2px solid var(--main-bg-color);
     }
 
 
-/**** section recherche ****/
+/**** header ****/
+    header{
+        padding-left: 20px;
+    }
+    
     .btn-form-desktop {
         display: none;
     }
