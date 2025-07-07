@@ -87,6 +87,7 @@ nav {
     list-style: none;
     display: flex;
     justify-content: space-between;
+    gap: 55px;
 }
 
 nav a {
@@ -111,7 +112,6 @@ header {
 form {
     display: flex;
     flex: 1;
-    max-width: 380px;
 }
 
 .fa-location-dot {
@@ -142,6 +142,7 @@ form input {
     border-bottom: var(--main-bg-color) solid 1px;
     border-top: var(--main-bg-color) solid 1px;
     outline-offset: -2px;
+    width: 200px;
 }
 
 form input::placeholder {
@@ -212,12 +213,16 @@ form input::placeholder {
     background-color: var(--filter-bg-color);
 }
 
+.fa-info {
+    font-size: 12px;
+}
+
 .logo-info {
     display: flex;
     justify-content: center;
     border-radius: 50%;
     border: var(--border-color) solid 1px;
-    padding: 7px 10px;
+    padding: 5px 8px;
 }
 
 .info {
@@ -492,11 +497,12 @@ footer li {
     }
 
     .logo {
-        padding: 30px;
+        padding: 25px;
     }
 
     .liens-nav {
         flex: 1;
+        gap: 0;
     }
 
     nav a:hover {
@@ -507,14 +513,20 @@ footer li {
     nav a {
         width: 50%;
         border-bottom: 2px solid var(--main-bg-color);
+        justify-content: center;
+        height: 50px;
     }
 
 
 /**** header ****/
     header{
-        padding-left: 20px;
+        padding-left: 25px;
     }
-    
+
+    .recherche-lieu input {
+        width: fit-content;
+    }
+
     .btn-form-desktop {
         display: none;
     }
